@@ -1,0 +1,8 @@
+services:
+  nutrition-bot:
+    build: .
+    container_name: nutrition_bot
+    restart: unless-stopped
+
+    volumes:
+      - ./config.py:/app/src/config.py
